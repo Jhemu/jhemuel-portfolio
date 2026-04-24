@@ -1,4 +1,13 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import {
+  About,
+  Blog,
+  Gallery,
+  Home,
+  Newsletter,
+  Person,
+  Social,
+  Work,
+} from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
@@ -15,7 +24,11 @@ const person: Person = {
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about video editing and AI-driven creative workflows</>,
+  description: (
+    <>
+      My weekly newsletter about video editing and AI-driven creative workflows
+    </>
+  ),
 };
 
 const social: Social = [
@@ -76,8 +89,10 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Jhemuel, a Video Editor & AI Video Prompt Specialist, where I craft engaging <br /> video content and explore AI-driven creative workflows. After hours, I build my own projects.
-</>
+      I'm Jhemuel, a Video Editor & AI Video Prompt Specialist, where I craft
+      engaging <br /> video content and explore AI-driven creative workflows.
+      After hours, I build my own projects.
+    </>
   ),
 };
 
@@ -102,9 +117,11 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Jhemuel is a Philippines-based Video Editor and AI Video Prompt Specialist focused on turning
-        complex concepts into visually engaging and impactful video content. He specializes in video editing, 
-        AI-driven creative workflows, and exploring the intersection of storytelling and generative AI technology.
+        Jhemuel is a Philippines-based Video Editor and AI Video Prompt
+        Specialist focused on turning complex concepts into visually engaging
+        and impactful video content. He specializes in video editing, AI-driven
+        creative workflows, and exploring the intersection of storytelling and
+        generative AI technology.
       </>
     ),
   },
@@ -149,83 +166,95 @@ const about: About = {
     ],
   },
   technical: {
-  display: true, // set to false to hide this section
-  title: "Technical Skills",
-  skills: [
-    {
-      title: "Video Editing",
-      description: (
-        <>Crafting clean, engaging, and professional video edits with strong pacing, storytelling, and visual impact.</>
-      ),
-      tags: [
-        {
-          name: "Adobe Premiere Pro",
-          icon: "premiere",
-        },
-        {
-          name: "After Effects",
-          icon: "aftereffects",
-        },
-        {
-          name: "Google Flow",
-          icon: "googleflow",
-        },
-        {
-          name: "Chat GPT",
-          icon: "chatgpt",
-        },
-      ],
-    },
-    {
-      title: "AI Video Prompt Engineering",
-      description: (
-        <>Designing precise AI prompts to generate high-quality video content, cinematic scenes, and creative visual outputs.</>
-      ),
-      tags: [
-        {
-          name: "AI Prompting",
-          icon: "ai",
-        },
-        {
-          name: "Generative AI",
-          icon: "ai",
-        },
-      ],
-    },
-    {
-      title: "Motion & Visual Storytelling",
-      description: (
-        <>Transforming ideas into visually compelling narratives using motion, rhythm, and cinematic composition.</>
-      ),
-      tags: [
-        {
-          name: "Motion Design",
-          icon: "motion",
-        },
-        {
-          name: "Storytelling",
-          icon: "story",
-        },
-      ],
-    },
-    {
-      title: "Creative Direction",
-      description: (
-        <>Developing clean, impactful visual styles focused on branding, mood, and audience engagement.</>
-      ),
-      tags: [
-        {
-          name: "Visual Direction",
-          icon: "design",
-        },
-        {
-          name: "Cinematic Style",
-          icon: "film",
-        },
-      ],
-    },
-  ],
-},
+    display: true, // set to false to hide this section
+    title: "Technical Skills",
+    skills: [
+      {
+        title: "Video Editing",
+        description: (
+          <>
+            Crafting clean, engaging, and professional video edits with strong
+            pacing, storytelling, and visual impact.
+          </>
+        ),
+        tags: [
+          {
+            name: "Adobe Premiere Pro",
+            icon: "premiere",
+          },
+          {
+            name: "After Effects",
+            icon: "aftereffects",
+          },
+          {
+            name: "Google Flow",
+            icon: "googleflow",
+          },
+          {
+            name: "Chat GPT",
+            icon: "chatgpt",
+          },
+        ],
+      },
+      {
+        title: "AI Video Prompt Engineering",
+        description: (
+          <>
+            Designing precise AI prompts to generate high-quality video content,
+            cinematic scenes, and creative visual outputs.
+          </>
+        ),
+        tags: [
+          {
+            name: "AI Prompting",
+            icon: "ai",
+          },
+          {
+            name: "Generative AI",
+            icon: "ai",
+          },
+        ],
+      },
+      {
+        title: "Motion & Visual Storytelling",
+        description: (
+          <>
+            Transforming ideas into visually compelling narratives using motion,
+            rhythm, and cinematic composition.
+          </>
+        ),
+        tags: [
+          {
+            name: "Motion Design",
+            icon: "motion",
+          },
+          {
+            name: "Storytelling",
+            icon: "story",
+          },
+        ],
+      },
+      {
+        title: "Creative Direction",
+        description: (
+          <>
+            Developing clean, impactful visual styles focused on branding, mood,
+            and audience engagement.
+          </>
+        ),
+        tags: [
+          {
+            name: "Visual Direction",
+            icon: "design",
+          },
+          {
+            name: "Cinematic Style",
+            icon: "film",
+          },
+        ],
+      },
+    ],
+  },
 };
 
 const blog: Blog = {
